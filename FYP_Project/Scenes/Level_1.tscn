@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=3 uid="uid://b57scdeufjecf"]
+
+[ext_resource type="Script" path="res://Scripts/Level_1.gd" id="1_bqbob"]
+[ext_resource type="Texture2D" uid="uid://04dny1gd7v6l" path="res://Assets/Tiles/Ground_tile.png" id="2_iy0y5"]
+[ext_resource type="Texture2D" uid="uid://dfn0245f6miii" path="res://Assets/Tiles/Background_tile.png" id="3_n3mon"]
+[ext_resource type="PackedScene" uid="uid://ddv43sflqayn8" path="res://Scenes/Pause_Menu.tscn" id="4_xu58p"]
+[ext_resource type="PackedScene" uid="uid://rbbn713civvn" path="res://Scenes/Main_Menu.tscn" id="5_1tf5x"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_euh5g"]
+texture = ExtResource("2_iy0y5")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ifqgl"]
+texture = ExtResource("3_n3mon")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSet" id="TileSet_yqfo7"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_ifqgl")
+sources/0 = SubResource("TileSetAtlasSource_euh5g")
+
+[node name="Level_1" type="Node2D"]
+script = ExtResource("1_bqbob")
+
+[node name="Rooms" type="Node" parent="."]
+
+[node name="TileMap" type="TileMap" parent="."]
+show_behind_parent = true
+tile_set = SubResource("TileSet_yqfo7")
+rendering_quadrant_size = 32
+format = 2
+layer_1/tile_data = PackedInt32Array()
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+zoom = Vector2(0.2, 0.2)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("4_xu58p")]
+
+[node name="Main_Menu" parent="CanvasLayer" instance=ExtResource("5_1tf5x")]
+visible = false

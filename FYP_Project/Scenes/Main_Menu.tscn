@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=3 uid="uid://rbbn713civvn"]
+
+[ext_resource type="Script" path="res://Scenes/Main_Menu.gd" id="1_8dwqw"]
+[ext_resource type="Texture2D" uid="uid://cas8dso24uirg" path="res://Assets/Sprites/Main_Background.png" id="2_glo2o"]
+[ext_resource type="Texture2D" uid="uid://cxbgb4ww7onqe" path="res://Assets/Sprites/Play_Button_Sprite.png" id="2_w4wrk"]
+[ext_resource type="Texture2D" uid="uid://bqakjjaikpby8" path="res://Assets/Sprites/Quit_Button.png" id="3_rvnkt"]
+[ext_resource type="Texture2D" uid="uid://dsyip8hsk5rsq" path="res://Assets/Sprites/Options_Button.png" id="4_nerct"]
+
+[node name="Main_Menu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8dwqw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_glo2o")
+
+[node name="Play" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.056
+anchor_top = 0.543
+anchor_right = 0.056
+anchor_bottom = 0.543
+offset_left = -0.512001
+offset_top = 0.135986
+offset_right = 52.488
+offset_bottom = 14.136
+scale = Vector2(4, 4)
+texture_normal = ExtResource("2_w4wrk")
+
+[node name="Quit" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.056
+anchor_top = 0.84
+anchor_right = 0.056
+anchor_bottom = 0.84
+offset_left = -0.512001
+offset_top = -0.320007
+offset_right = 51.488
+offset_bottom = 13.68
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+texture_normal = ExtResource("3_rvnkt")
+
+[node name="Options" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.056
+anchor_top = 0.691
+anchor_right = 0.056
+anchor_bottom = 0.691
+offset_left = -0.512001
+offset_top = 0.231964
+offset_right = 57.488
+offset_bottom = 15.232
+scale = Vector2(4, 4)
+texture_normal = ExtResource("4_nerct")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
