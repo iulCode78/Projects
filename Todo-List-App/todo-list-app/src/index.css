@@ -1,0 +1,125 @@
+body{
+    background-color: hsl(60, 56%, 91%);
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+    font-size: 3rem;
+}
+
+.todo-list-display{
+    text-align: center;
+    margin: auto;
+}
+
+input[type="text"]{
+    font-size: 1.2rem;
+    width: 240px;
+    height: 42px;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+button{
+    cursor: pointer;
+}
+
+#add-task-btn{
+    background-color: hsl(120, 38%, 40%);
+    color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 42px;
+    width: 42px;
+    margin-left: 5px;
+}
+
+#add-task-btn:hover{
+    background-color: hsl(120, 38%, 50%);
+}
+
+#add-task-btn:active{
+    background-color: hsl(120, 38%, 70%);
+}
+
+ol{
+    padding: 0;
+}
+
+li{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: hsl(60, 56%, 80%);
+    margin-bottom: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.task-text{
+    flex: 1;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.delete-task-btn{
+    background-color: hsl(0, 100%, 40%);
+    font-weight: bold;
+    color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 42px;
+    width: 42px;
+}
+
+.delete-task-btn:hover{
+    background-color: hsl(0, 100%, 50%);
+}
+
+.delete-task-btn:active{
+    background-color: hsl(0, 100%, 70%);
+}
+
+.up-task-btn{
+    background-color: hsl(207, 67%, 49%);
+    font-weight: bold;
+    color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 42px;
+    width: 42px;
+    margin-left: 5px;
+}
+
+.up-task-btn:hover{
+    background-color: hsl(207, 67%, 69%);
+}
+
+.up-task-btn:active{
+    background-color: hsl(207, 67%, 89%);
+}
+
+.down-task-btn{
+    background-color: hsl(39, 88%, 45%);
+    font-weight: bold;
+    color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 42px;
+    width: 58px;
+    margin-left: 5px;
+}
+
+.down-task-btn:hover{
+    background-color: hsl(39, 88%, 65%);
+}
+
+.down-task-btn:active{
+    background-color: hsl(39, 88%, 85%);
+}
