@@ -1,0 +1,28 @@
+.app {
+  padding: 30px;
+  background-color: rgb(222, 188, 238);
+  border-radius: 10px;
+}
+
+.todo {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  
+}
+
+#todobutton
+{
+  height: 40px;
+  width: 80px;
+  padding: 2px;
+  font-weight: bold;
+  margin-top: 10px;
+  position: relative;
+  /* left: 10px;
+  bottom: 70px; */
+  background-color: #5b1a62;
+  color: #ffffff;
+  border-radius: 10px;
+}

@@ -1,0 +1,31 @@
+.stopwatch
+{
+    background-color: #5b1a62;
+    height: 100px;
+    width: 110px;
+    color: #ffffff;
+    border: 4px; 
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    position: relative;
+    left: 50px;
+    top: 60px;
+}
+
+#timerbutton
+{
+    height: 40px;
+    width: 60px;
+    padding: 2px;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+    left: 10px;
+    bottom: 70px;
+    background-color: #5b1a62;
+    color: #ffffff;
+    border-radius: 10px;
+}

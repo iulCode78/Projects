@@ -1,0 +1,95 @@
+body
+{
+    background-color: #f3e4fa;
+}
+
+h1
+{
+    background-color: #c6ade6;
+    padding: 15px;
+    margin: 10px;
+}
+
+h3
+{
+    margin: 0px;
+}
+.container
+{
+    position: relative;
+    width: 30%;
+    top: 30%;
+    height: 50%;
+    background-color: lightgrey;
+    padding-top: 60px;
+    left: 35%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 8px;
+}
+
+input[type=text]
+{
+    position: relative;
+    width: 70%;
+    padding: 12px 30px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=password]
+{
+    position: relative;
+    width: 70%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit]
+{
+    width: 50%;
+    padding: 14px 20px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=submit]:hover
+{
+    opacity: 0.5;
+}
+
+.Avatar
+{
+    width: 5%;
+    border-radius: 5%;
+}
+
+.imgcontain
+{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.form-group
+{
+    padding: 8px;
+    text-align: center;
+}
+
+.userIcon
+{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+}

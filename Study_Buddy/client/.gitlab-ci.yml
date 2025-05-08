@@ -1,0 +1,15 @@
+stages:
+  - deploy
+deploy:
+  image: node:8
+  stage: deploy
+  environment: production
+  script:
+    - npm install -g firebase-tools
+    - npm install @angular/cli
+    - npm install
+    - ./node_modules/@angular/cli/bin/ng build --progress false --prod
+    - firebase deploy --token "$FIREBASE_DEPLOY_KEY" -P "project-id"
+    
+  only:
+    - master

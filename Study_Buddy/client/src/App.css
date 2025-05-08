@@ -1,0 +1,155 @@
+.App 
+{
+  text-align: center;
+}
+
+.App-logo 
+{
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) 
+{
+  .App-logo
+  {
+    animation: App-logo-spin infinite 10s linear;
+    text-align: left;
+  }
+}
+
+.App-header 
+{
+  background-color: #ede4fd;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.Spotify
+{
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.calendar
+{
+  padding: 3%;
+  display: center;
+  flex-direction: column;
+  text-align: flex;
+
+  justify-content: flex;
+  font-size: calc(2px + 2vmin);
+  color: rgb(67, 1, 69);
+}
+
+.App-link 
+{
+  color: rgb(67, 1, 69);
+}
+
+/*notes buttons start*/
+.button 
+{
+  background-color: #9c9c9c;
+  border: none;
+  /*text*/
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#container-buttons
+{
+  display: flex;
+  flex-direction: column;
+  /*Just show the outline of the box*/
+  /* border: 2px red solid; */
+  /*how far apart buttons are*/
+  gap: 40px;
+  padding: 30px;
+}
+
+/*Upload Notes*/
+.button1
+{
+  background-color: #d080fb;
+  border-radius: 12px;
+  font-size: 25px;
+  width: 50%;
+  padding: 30px 50px;
+}
+/*View All Notes*/
+.button2
+{
+  background-color: #d080fb;
+  border-radius: 12px;
+  font-size: 25px;
+  width: 50%;
+  padding: 30px 50px; 
+}
+
+/*highlight button when hovering*/
+.button:hover 
+{
+  background-color: #dda2fc;
+  /*text*/
+  color: #ffffff;
+}
+/*notes buttons end*/
+
+.content-container {
+  padding: 3%;
+  height: 100vh;
+  background-color: rgb(243, 228, 250);
+  font-size: 64px;
+}.left-panel {
+  background-color: rgb(226, 204, 250);
+}.middle-panel {
+  background-color: rgb(198, 173, 230)
+}.right-panel {
+  background-color: rgb(169, 121, 214);
+}.box {
+  border: 1px solid black;
+}
+.row {
+  display: flex;
+  height: 100%;
+}
+.left-panel {
+  flex: 5;
+}.middle-panel {
+  flex: 3;
+}.right-panel {
+  flex: 2;
+}
+
+.quotes {
+  padding: 2%;
+}
+
+
+@keyframes App-logo-spin 
+{
+  from 
+  {
+    transform: rotate(0deg);
+  }
+  to 
+  {
+    transform: rotate(360deg);
+  }
+}
