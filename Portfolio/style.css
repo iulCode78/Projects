@@ -1,4 +1,5 @@
 .profile{
+    animation: 1s ease-out 0s 1 slideInFromBottom;
     height: 350px;
     width: 350px;
     border-style: solid;
@@ -6,6 +7,17 @@
     border-radius: 15px;
     border-color: white;
     margin-bottom: 50px;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(10%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
 }
 
 html, body{
@@ -23,10 +35,6 @@ body{
 
 .navbar-light{
     background-color: #ffffff !important;
-}
-
-.navbar-brand{
-    font-family: fantasy;
 }
 
 .nav-link{
@@ -52,6 +60,7 @@ body{
 }
 
 .navbar-brand{
+    font-family: fantasy;
     font-size: 45px;
     margin-left: 100px;
 }
@@ -73,10 +82,12 @@ body{
 }
 
 .about_sect{
+    animation: 1s ease-out 0s 1 slideInFromBottom;
     margin-top: 140px;
 }
 
 .about_header{
+    animation: 1s ease-out 0s 1 slideInFromBottom;
     font-family: fantasy;
     font-size: 60px;
     text-decoration: underline;
@@ -84,7 +95,6 @@ body{
 
 .about_para{
     font-size: 20px;
-    font-family: fantasy;
     color: white;
 }
 
@@ -348,7 +358,7 @@ span{
       transition: 0.8s; /* smooth transition */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 100px) and (max-width: 600px) {
     .navbar-brand{
       font-size: 30px;
       margin-left: 20px;
@@ -386,7 +396,6 @@ span{
 
     .about_para{
       font-size: 16px;
-      font-family: fantasy;
       color: white;
     }
 
@@ -476,19 +485,19 @@ span{
     }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (min-width: 650px) and (max-width: 1100px) {
     .navbar-brand{
       font-size: 40px;
-      margin-left: 30px;
+      margin-left: 20px;
     }
 
     .navbar-nav{
-      margin-left: 30px;
+      margin-left: 0px;
     }
 
     .profile{
-      height: 360px;
-      width: 360px;
+      height: 320px;
+      width: 320px;
       border-style: solid;
       border-width: 10px;
       border-radius: 15px;
@@ -508,18 +517,17 @@ span{
 
     .about_header{
       font-family: fantasy;
-      font-size: 80px;
+      font-size: 60px;
       text-decoration: underline;
     }
 
     .about_para{
-      font-size: 25px;
-      font-family: fantasy;
+      font-size: 20px;
       color: white;
     }
 
     .projects_header{
-      font-size: 75px;
+      font-size: 85px;
       font-family: 'Inter';
       text-align: center;
       margin-top: 40px;
@@ -530,7 +538,7 @@ span{
 
     .card{
       border-color: black;
-      border-width: 14px;
+      border-width: 10px;
       border-style: solid;
       margin-bottom: 40px;
       margin-left: 15px;
@@ -547,7 +555,7 @@ span{
     }
 
     .card-title{
-      font-size: 26px;
+      font-size: 23px;
       font-family: fantasy;
       text-decoration: underline;
       text-decoration-thickness: 5px;
@@ -563,9 +571,7 @@ span{
     }
 
     .card-text{
-      font-family: fantasy;
       margin-top: 10px;
-      font-size: 19px;
     }
 
     .skill_list{
@@ -584,55 +590,61 @@ span{
       border-color: #ffffff;
     }
 
-    .flex-container > div {
-      font-family: fantasy;
-      background-color: white;
-      border-radius: 5px;
-      margin: 8px;
-      padding: 5px;
-      font-size: 30px;
-    }
-
     .exp_list{
-      font-size: 25px;
-      margin-left: 10px;
-      padding: 20px;
-    }
-
-    .exp_header{
-        font-size: 35px;
-    }
-
-    .uni{
-        font-size: 35px;
+        font-size: 15px;
+        margin-left: 10px;
+         padding: 20px;
     }
 
     .dates{
-      font-size: 30px;
+      font-size: 18px;
       font-family: fantasy;
       color: white;
     }
 
-    .contacts{
-      font-size: 25px;
-      width: 450px;
-    }
-
-    .contacts-text{
-      font-size: 25px;
-      width: 450px;
-    }
-
-    .contacts-button{
-      padding: 10px;
-      font-size: 30px;
-    }
-
     .nav-item{
-      margin-left: 0px;
+        margin-left: 0px;
     }
 
     .navbar-brand{
       margin-left: 0px;
+    }
+
+    .contacts{
+      font-family: fantasy;
+      border-radius: 10px;
+      border-style: solid;
+      border-color: #000000;
+      border-width: 5px;
+      padding: 10px;
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 300px;
+    }
+
+    .contacts-text{
+      font-family: fantasy;
+      border-radius: 10px;
+      border-style: solid;
+      border-color: #000000;
+      border-width: 5px;
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      height: 140px;
+      width: 300px;
+    }
+
+    .contacts-button{
+      display: flex;
+      margin: auto;
+      padding: 5px;
+      font-size: 20px;
+      font-family: fantasy;
+      border-radius: 10px;
+      border-style: solid;
+      border-color: rgb(236, 234, 234);
+      border-width: 5px;
     }
 }
